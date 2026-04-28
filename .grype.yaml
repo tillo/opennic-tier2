@@ -1,0 +1,9 @@
+ignore:
+  - vulnerability: CVE-2025-13151  # distro maintainer declared wont-fix; no patch available
+  - vulnerability: CVE-2025-69720  # distro maintainer declared wont-fix; no patch available
+  - vulnerability: CVE-2026-27135  # no fix available upstream; monitoring
+  - vulnerability: CVE-2026-4046  # distro maintainer declared wont-fix; no patch available
+  - vulnerability: CVE-2026-4437  # distro maintainer declared wont-fix; no patch available
+  - vulnerability: CVE-2026-4878  # distro maintainer declared wont-fix; no patch available
+  - vulnerability: CVE-2026-5450  # distro maintainer declared wont-fix; no patch available
+  - vulnerability: CVE-2026-5928  # distro maintainer declared wont-fix; no patch available
