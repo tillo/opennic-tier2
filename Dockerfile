@@ -15,7 +15,13 @@ ENV PACKAGES="\
 "\
   DEBIAN_FRONTEND=noninteractive
 
-RUN apt update -y && apt install -y --no-install-recommends $PACKAGES && apt clean all
+# ARG changes daily (passed from CI as $(date +%Y%m%d)) so this RUN's
+# cache key invalidates once per day, picking up newly-published security
+# patches via `apt upgrade` against current debian repos.
+ARG CACHEBUST_DAY=unset
+RUN echo "cache day: ${CACHEBUST_DAY}" && \
+    apt update -y && apt -y upgrade && \
+    apt install -y --no-install-recommends $PACKAGES && apt clean all
 
 COPY iptables.rules /etc/iptables/rules.v4
 
