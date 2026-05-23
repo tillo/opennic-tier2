@@ -1,4 +1,9 @@
-FROM gitlab.mdapi.ch/mdapi/dependency_proxy/containers/debian:stable
+# Public default pulls debian:stable straight from Docker Hub. In a CI
+# environment with a registry pull-through cache (e.g. GitLab dependency
+# proxy), set --build-arg REGISTRY=<cache-prefix>/ to route the base image
+# through it.
+ARG REGISTRY=
+FROM ${REGISTRY}debian:stable
 
 ENV PACKAGES="\
   wget \
