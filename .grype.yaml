@@ -1,25 +1,12 @@
 ignore:
-  - vulnerability: CVE-2025-13151
-  - vulnerability: CVE-2025-69720
-  - vulnerability: CVE-2026-27135
-  - vulnerability: CVE-2026-4046
-  - vulnerability: CVE-2026-4437
-  - vulnerability: CVE-2026-4878
-  - vulnerability: CVE-2026-5450
-  - vulnerability: CVE-2026-5928
-
-  # --- added by curator on 2026-05-31 (UTC) ---
-  # High — upstream won't-fix
   - vulnerability: CVE-2026-5435
     package:
       name: libc-bin
       type: deb
-  # High — upstream won't-fix
   - vulnerability: CVE-2026-5435
     package:
       name: libc6
       type: deb
-  # Critical — upstream won't-fix
   - vulnerability: CVE-2026-8376
     package:
       name: perl-base
