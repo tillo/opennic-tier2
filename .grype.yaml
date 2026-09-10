@@ -1,60 +1,4 @@
 ignore:
-  - vulnerability: CVE-2026-11822
-    package:
-      name: libsqlite3-0
-      type: deb
-  - vulnerability: CVE-2026-11824
-    package:
-      name: libsqlite3-0
-      type: deb
-  - vulnerability: CVE-2026-12087
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-13221
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-41992
-    package:
-      name: gzip
-      type: deb
-  - vulnerability: CVE-2026-48959
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-48961
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-48962
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-54369
-    package:
-      name: libacl1
-      type: deb
-  - vulnerability: CVE-2026-54370
-    package:
-      name: libacl1
-      type: deb
-  - vulnerability: CVE-2026-57432
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-57433
-    package:
-      name: perl-base
-      type: deb
-  - vulnerability: CVE-2026-58469
-    package:
-      name: wget
-      type: deb
-  - vulnerability: CVE-2026-7017
-    package:
-      name: perl-base
-      type: deb
   - vulnerability: CVE-2026-58471
     package:
       name: wget
@@ -267,9 +211,6 @@ ignore:
     package:
       name: util-linux
       type: deb
-
-  # --- added by curator on 2026-09-07 (UTC) ---
-  # High — upstream won't-fix
   - vulnerability: CVE-2026-86145
     package:
       name: libpcre2-8-0
