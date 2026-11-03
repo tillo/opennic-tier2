@@ -3,7 +3,7 @@
 # proxy), set --build-arg REGISTRY=<cache-prefix>/ to route the base image
 # through it.
 ARG REGISTRY=
-FROM ${REGISTRY}debian:stable
+FROM ${REGISTRY}debian:trixie-20261027
 
 ENV PACKAGES="\
   wget \
